@@ -4021,6 +4021,10 @@ type LiveConnectConfig struct {
 	// proactively to
 	// the input and to ignore irrelevant input.
 	Proactivity *ProactivityConfig `json:"proactivity,omitempty"`
+	// Optional. The ID of the voice to use for spoken responses in native audio models.
+	VoiceID string `json:"voiceId,omitempty"`
+	// Optional. Language code for the response audio, using BCP-47 format (e.g., "en-US").
+	ResponseLanguage string `json:"responseLanguage,omitempty"`
 }
 
 // Parameters for sending client content to the live API.
